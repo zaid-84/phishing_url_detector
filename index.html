@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Link Detector</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Phishing Link Detector</h1>
+        <p>Enter a URL below to check for phishing threats.</p>
+
+        <!-- Form for URL input -->
+        <form action="/predict" method="POST">
+            <input type="text" name="url" placeholder="Enter URL here..." required>
+            <button type="submit">Check</button>
+        </form>
+
+        <!-- Display the prediction result -->
+        {% if prediction_text %}
+        <p id="result">{{ prediction_text }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
