@@ -10,6 +10,7 @@ Phishing URL Detection: The application uses a machine learning model to classif
 Simple Web Interface: Users can input a URL into a form, and the application will return the result.
 Model Integration: The machine learning model is integrated into the Flask app to make real-time predictions.
 Requirements
+I unable to upload a dataset .csv file due to large file you can use any dataset instead, i use kaggle phishing_dataset.
 To run this project locally, you need the following dependencies:
 
 Python 3.x
